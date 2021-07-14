@@ -1,0 +1,264 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/* common style */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  margin: 10px;
+  color: #e02c6d;
+}
+h2 {
+  color: #18191f;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 20px;
+}
+
+/* header-section */
+.container {
+  display: flex;
+  background-color: #2d25a0;
+  height: 655px;
+}
+.container-info {
+  width: 556.01px;
+  height: 438px;
+  margin: 80px;
+}
+.container-title {
+  width: 485px;
+  height: 230px;
+  font-style: normal;
+  font-size: 64px;
+  color: #ffffff;
+  line-height: 80px;
+}
+.container-button {
+  display: flex;
+  margin-top: 17px;
+  padding: 10px 20px;
+  width: 160px;
+  height: 44px;
+  background-color: #e02c6d;
+  transition: transform 1s ease-in-out;
+}
+.container-button:hover {
+  transform: scale(1.1);
+}
+.button {
+  width: 88px;
+  height: 24px;
+  margin: 10px 18px;
+}
+
+.button a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+  transition: font-size 1s ease-in-out;
+}
+.button a:hover {
+  font-size: 16px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+  margin: 10px 5px;
+}
+.icon i {
+  transition: transform 1s ease;
+}
+.icon i:hover {
+  transform: scale(2, 2);
+}
+.container-image {
+  margin-right: 25px;
+  transition: transform 2s ease;
+}
+.container-image:hover {
+  transform: scale(1.1, 1.1);
+}
+.container-image img {
+  width: 100%;
+}
+/* player section */
+.main-margin {
+  margin: 70px 180px;
+}
+
+.top-players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+}
+.player-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 474px;
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.35);
+}
+.player-image {
+  width: 300px;
+  height: 256px;
+}
+.player-image img {
+  width: 100%;
+}
+.player-detail {
+  width: 300px;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+.player-detail p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* news-section */
+.news-margin {
+  margin: 70px 80px;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 45px;
+  justify-content: space-around;
+}
+.news-info {
+  display: flex;
+  align-items: center;
+  width: 605px;
+  height: 250px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 40px rgb(0 0 0 / 35%);
+}
+.news-image {
+  margin: 10px 20px;
+}
+.news-image img {
+  width: 100%;
+}
+.news-heading {
+  margin: 10px;
+}
+.news-heading .news-detail {
+  width: 100%;
+}
+/* footer section  */
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 483.87px;
+  height: 213px;
+  margin: 68px 490px;
+}
+.football-image {
+  width: 483.87px;
+  height: 110px;
+  margin: 20px 0px;
+}
+.football-image img {
+  width: 100%;
+}
+.social-icon {
+  margin: 10px 150px;
+  width: 170px;
+  height: 32px;
+  color: #969bab;
+}
+.social-icon i {
+  width: 17.07px;
+  height: 12.27px;
+  margin: 0px 8px;
+}
+.footer-text {
+  color: #000000;
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* ipad screen  */
+@media only screen and (max-width: 992px) {
+  /* header section  */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 190%;
+  }
+  /* player section */
+  .top-players {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 25%;
+  }
+  /* news section  */
+  h1 {
+    width: 100%;
+    padding: 0 35%;
+  }
+  .news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 36%;
+    width: 100%;
+  }
+  /* footer section */
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 65%;
+  }
+}
+/* mobile screen  */
+@media only screen and (max-width: 688px) {
+  /* header section  */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 189%;
+    height: 100%;
+  }
+  /* player section */
+  .top-players {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /* news section  */
+  h1 {
+    text-align: center;
+    margin: 10px;
+    color: #e02c6d;
+  }
+  .news-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+  /* footer section */
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 50%;
+  }
+}
